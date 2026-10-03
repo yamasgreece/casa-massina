@@ -97,6 +97,20 @@
   .book .phone:hover{color:var(--accent-d)}
   .book .alt{margin-top:26px;font-size:14px;color:var(--soft)}
   .book .alt a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;margin:0 6px}
+  .revstats{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 10px}
+  .revstat{border:1px solid var(--line);border-radius:14px;padding:18px 24px;background:#fff;min-width:150px}
+  .revstat .s{font-family:'Fraunces',serif;font-size:30px;line-height:1}
+  .revstat .s small{font-size:16px;color:var(--soft)}
+  .revstat .p{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:8px}
+  .revstat .n{font-size:13px;color:var(--soft);margin-top:3px}
+  .quotes{columns:2;column-gap:22px;margin-top:34px}
+  .quote{break-inside:avoid;margin:0 0 22px;border:1px solid var(--line);border-radius:14px;padding:26px 28px;background:#fff}
+  .quote p{margin:0;font-size:17px;line-height:1.6;color:#2e2a22}
+  .quote p::before{content:"\201C";color:var(--accent);font-size:28px;line-height:0;vertical-align:-.35em;margin-right:4px}
+  .quote .who{margin-top:14px;font-size:13px;color:var(--soft);letter-spacing:.02em}
+  .quote .who b{color:var(--ink);font-weight:500}
+  .revnote{font-size:12.5px;color:#a8a295;margin-top:6px}
+  @media(max-width:760px){.quotes{columns:1}}
   details{border-bottom:1px solid var(--line);padding:20px 0}
   details summary{cursor:pointer;list-style:none;font-size:18px;font-family:'Fraunces',serif;display:flex;justify-content:space-between;gap:16px}
   details summary::-webkit-details-marker{display:none}
@@ -122,6 +136,7 @@
       <a class="nl" href="#kerkini">Λίμνη Κερκίνη</a>
       <a class="nl" href="#area">Η περιοχή</a>
       <a class="nl" href="#gallery">Οι χώροι</a>
+      <a class="nl" href="#reviews">Κριτικές</a>
       <a class="lang" href="../" aria-label="In English">EN</a>
       <a class="nav-call tel" href="tel:+306944677617">Κλείσε τηλεφωνικά</a>
     </nav>
@@ -248,6 +263,27 @@
       <figure><img src="../images/gallery/shower.jpg" alt="Το ντους με τα μοτίβα πλακάκια" loading="lazy"></figure>
       <figure><img src="../images/g6.jpg" alt="Μια γωνιά του διαμερίσματος" loading="lazy"></figure>
     </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Τι λένε οι επισκέπτες</div>
+    <h2 style="font-size:clamp(28px,4.4vw,48px);max-width:18ch">Άριστες βαθμολογίες σε κάθε πλατφόρμα, σε κάθε γλώσσα.</h2>
+    <div class="revstats">
+      <div class="revstat"><div class="s">5,0 <small>/ 5</small></div><div class="p">Airbnb</div><div class="n">6 κριτικές</div></div>
+      <div class="revstat"><div class="s">10 <small>/ 10</small></div><div class="p">Booking.com</div><div class="n">13 κριτικές · «Εξαιρετικό»</div></div>
+      <div class="revstat"><div class="s">5,0 <small>/ 5</small></div><div class="p">Google</div><div class="n">Επιβεβαιωμένη καταχώριση</div></div>
+    </div>
+    <div class="quotes">
+      <figure class="quote"><p>Το σπίτι είναι ακριβώς όπως στις φωτογραφίες, πολύ όμορφο και πολύ άνετο. Η ενδοδαπέδια θέρμανση έκανε τον χώρο ιδανικό για χειμερινές διακοπές.</p><figcaption class="who"><b>Ερυφύλη</b> · Booking.com · Ελλάδα</figcaption></figure>
+      <figure class="quote"><p>Υπέροχο σπίτι και φανταστική φιλοξενία! Πολύ καλή η ιδιοκτήτρια, νιώσαμε σαν στο σπίτι μας.</p><figcaption class="who"><b>Νινέτα</b> · Booking.com · Ελλάδα</figcaption></figure>
+      <figure class="quote"><p>Μια πραγματικά όμορφη διαμονή στα Άνω Πορόια. Το κατάλυμα είχε ό,τι χρειαζόμασταν και η επικοινωνία με τον οικοδεσπότη ήταν άψογη. Αν θες να επισκεφθείς την Κερκίνη, δεν θα δίσταζα να το προτείνω. 10/10!</p><figcaption class="who"><b>Graham</b> · Airbnb · Ιούλιος 2025</figcaption></figure>
+      <figure class="quote"><p>Ήρθαμε για παρατήρηση πουλιών και από το χωριό φτάναμε εύκολα στη λίμνη και στα βουνά. Δεν νομίζω ότι θα έβρισκες καλύτερο μέρος να μείνεις σ’ αυτή την περιοχή.</p><figcaption class="who"><b>Kathryn</b> · Airbnb · Μάιος 2025</figcaption></figure>
+      <figure class="quote"><p>Όλα ήταν εξαιρετικά και πραγματικά θα θέλαμε να μείνουμε ξανά. Η συνεννόηση με την ιδιοκτήτρια ήταν άψογη, από την κράτηση μέχρι την αναχώρηση, και η τοποθεσία κεντρική κι εύκολα προσβάσιμη.</p><figcaption class="who"><b>Επισκέπτρια</b> · Booking.com · Ελλάδα</figcaption></figure>
+      <figure class="quote"><p>Υπέροχο design! Ένιωσες σαν στο σπίτι σου και η τοποθεσία ήταν φανταστική. Η φιλοξενία τόσο ζεστή που έκανε την εμπειρία ακόμη καλύτερη.</p><figcaption class="who"><b>Rocco</b> · Booking.com · Ελλάδα</figcaption></figure>
+    </div>
+    <p class="revnote">Αληθινές κριτικές από Airbnb, Booking.com &amp; Google — μεταφρασμένες όπου χρειάστηκε.</p>
   </div>
 </section>
 

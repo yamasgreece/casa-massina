@@ -122,6 +122,21 @@
   .book .alt{margin-top:26px;font-size:14px;color:var(--soft)}
   .book .alt a{color:var(--ink);text-decoration:underline;text-underline-offset:3px;margin:0 6px}
 
+  .revstats{display:flex;flex-wrap:wrap;gap:14px;margin:34px 0 10px}
+  .revstat{border:1px solid var(--line);border-radius:14px;padding:18px 24px;background:#fff;min-width:150px}
+  .revstat .s{font-family:'Fraunces',serif;font-size:30px;line-height:1}
+  .revstat .s small{font-size:16px;color:var(--soft)}
+  .revstat .p{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-top:8px}
+  .revstat .n{font-size:13px;color:var(--soft);margin-top:3px}
+  .quotes{columns:2;column-gap:22px;margin-top:34px}
+  .quote{break-inside:avoid;margin:0 0 22px;border:1px solid var(--line);border-radius:14px;padding:26px 28px;background:#fff}
+  .quote p{margin:0;font-size:17px;line-height:1.6;color:#2e2a22}
+  .quote p::before{content:"\201C";color:var(--accent);font-size:28px;line-height:0;vertical-align:-.35em;margin-right:4px}
+  .quote .who{margin-top:14px;font-size:13px;color:var(--soft);letter-spacing:.02em}
+  .quote .who b{color:var(--ink);font-weight:500}
+  .revnote{font-size:12.5px;color:#a8a295;margin-top:6px}
+  @media(max-width:760px){.quotes{columns:1}}
+
   details{border-bottom:1px solid var(--line);padding:20px 0}
   details summary{cursor:pointer;list-style:none;font-size:18px;font-family:'Fraunces',serif;display:flex;justify-content:space-between;gap:16px}
   details summary::-webkit-details-marker{display:none}
@@ -150,6 +165,7 @@
       <a class="nl" href="#kerkini">Lake Kerkini</a>
       <a class="nl" href="#area">The area</a>
       <a class="nl" href="#gallery">Gallery</a>
+      <a class="nl" href="#reviews">Reviews</a>
       <a class="lang" href="el/" aria-label="Στα ελληνικά">ΕΛ</a>
       <a class="nav-call tel" href="tel:+306944677617">Call to book</a>
     </nav>
@@ -276,6 +292,27 @@
       <figure><img src="images/gallery/shower.jpg" alt="The patterned-tile shower" loading="lazy"></figure>
       <figure><img src="images/g6.jpg" alt="A corner of the apartment" loading="lazy"></figure>
     </div>
+  </div>
+</section>
+
+<section id="reviews" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">What guests say</div>
+    <h2 style="font-size:clamp(28px,4.4vw,48px);max-width:18ch">Spotless scores on every platform, in every language.</h2>
+    <div class="revstats">
+      <div class="revstat"><div class="s">5.0 <small>/ 5</small></div><div class="p">Airbnb</div><div class="n">6 reviews</div></div>
+      <div class="revstat"><div class="s">10 <small>/ 10</small></div><div class="p">Booking.com</div><div class="n">13 reviews · “Exceptional”</div></div>
+      <div class="revstat"><div class="s">5.0 <small>/ 5</small></div><div class="p">Google</div><div class="n">Verified listing</div></div>
+    </div>
+    <div class="quotes">
+      <figure class="quote"><p>A truly beautiful stay in Ano Poroia. The accommodation had everything we needed and the host was excellent in communication. If you want to visit Lake Kerkini and want a special place to stay, I wouldn’t hesitate to recommend here. 10/10!</p><figcaption class="who"><b>Graham</b> · Airbnb · July 2025</figcaption></figure>
+      <figure class="quote"><p>Our aim was to go birdwatching and we were able to visit the mountains and Lake Kerkini easily from the village. I don’t think you could find anywhere nicer to stay in this area.</p><figcaption class="who"><b>Kathryn</b> · Airbnb · May 2025</figcaption></figure>
+      <figure class="quote"><p>The apartment is nicely furnished and decorated, just as shown in the pictures. We really felt part of everyday Greek life — in the middle of the village, yet quiet at night. We can definitely recommend staying there.</p><figcaption class="who"><b>Simone</b> · Airbnb</figcaption></figure>
+      <figure class="quote"><p>Great design! It felt like home and the location was amazing. The host was so helpful and friendly that it made the experience even better.</p><figcaption class="who"><b>Rocco</b> · Booking.com · Greece</figcaption></figure>
+      <figure class="quote"><p>Spacious and beautifully furnished. A great base for exploring Lake Kerkini or the mountains nearby. We would love to come back someday.</p><figcaption class="who"><b>Timme</b> · Airbnb · June 2026</figcaption></figure>
+      <figure class="quote"><p>A magnificent, modern home, quiet and very well equipped, in a lovely village.</p><figcaption class="who"><b>Nicole</b> · Booking.com · Switzerland</figcaption></figure>
+    </div>
+    <p class="revnote">Real reviews from Airbnb, Booking.com &amp; Google — translated where needed.</p>
   </div>
 </section>
 
