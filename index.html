@@ -72,6 +72,12 @@
   .kerkini-img img{width:100%;height:clamp(320px,52vw,560px);object-fit:cover;border-radius:4px}
   .kerkini-img .credit{position:absolute;right:12px;bottom:10px;font-size:10px;color:rgba(255,255,255,.8);letter-spacing:.03em}
 
+  /* art list */
+  .artpiece{padding:20px 0;border-bottom:1px solid var(--line)}
+  .artpiece:first-child{border-top:1px solid var(--line)}
+  .artpiece h3{font-size:21px}
+  .artpiece p{margin:6px 0 0;color:#4a463e;font-size:15.5px;line-height:1.6}
+
   /* guide cards */
   .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
   .card{border:1px solid var(--line);border-radius:14px;padding:28px;background:#fff;transition:transform .3s,box-shadow .3s}
@@ -124,6 +130,7 @@
     <div class="brand">Casa Massina</div>
     <nav class="nav-links">
       <a class="nl" href="#house">The house</a>
+      <a class="nl" href="#art">The art</a>
       <a class="nl" href="#kerkini">Lake Kerkini</a>
       <a class="nl" href="#area">The area</a>
       <a class="nl" href="#gallery">Gallery</a>
@@ -176,6 +183,22 @@
       <div><div class="n">Wi-Fi</div><div class="l">Free, fast</div></div>
       <div><div class="n">Parking</div><div class="l">Free, by the house</div></div>
       <div><div class="n">The square</div><div class="l">Tavernas a minute away</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="art" style="padding-top:0">
+  <div class="wrap two" style="align-items:start">
+    <div>
+      <div class="kicker">The art</div>
+      <h2 style="font-size:clamp(28px,4.4vw,48px);max-width:14ch">Real work on the walls, not framed nothing.</h2>
+      <p style="color:#3a362e;margin-top:18px;max-width:40ch">Part of what makes Casa Massina feel like a home rather than a rental is that the pieces in it are real. A few of them are worth knowing before you arrive.</p>
+    </div>
+    <div>
+      <div class="artpiece"><h3>A Naxian marble by Ingbert Brunk</h3><p>A sculpture in white Naxos marble, set to stand against the window so the light moves through and around it.</p></div>
+      <div class="artpiece"><h3>The Calbarri painting</h3><p>A canvas that anchors the main wall and sets the room's colour.</p></div>
+      <div class="artpiece"><h3>A thread work above the daybed</h3><p>A woven piece in fine threads, hung over the sofa, catching the light differently through the day.</p></div>
+      <div class="artpiece"><h3>Coloured ceramics</h3><p>Handmade ceramic pieces in strong colour, placed through the open space.</p></div>
     </div>
   </div>
 </section>
