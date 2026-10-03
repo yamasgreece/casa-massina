@@ -56,7 +56,10 @@
   .hero-cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
   .hero-cta .small{font-size:13px;color:var(--soft)}
   .hero-cta .small a{color:var(--accent-d)}
-  .mosaic{columns:3;column-gap:16px;margin-top:clamp(30px,5vw,58px)}
+  .hero-banner{margin-top:clamp(26px,4vw,46px)}
+  .hero-banner img{width:100%;height:clamp(230px,38vw,460px);object-fit:cover;display:block;border-radius:4px}
+  .hero-banner .cap{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-top:12px}
+  .mosaic{columns:3;column-gap:16px;margin-top:clamp(26px,4vw,40px)}
   .mosaic figure{margin:0 0 16px;break-inside:avoid;overflow:hidden;border-radius:4px;background:var(--line)}
   .mosaic img{width:100%;height:auto;display:block;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
   .mosaic figure:hover img{transform:scale(1.035)}
@@ -156,6 +159,10 @@
       <a class="btn accent tel" href="tel:+306944677617">Call to book · +30 694 467 7617</a>
       <span class="small">or find us on <a href="https://www.google.com/maps/search/?api=1&query=Casa%20Massina%20Ano%20Poroia" target="_blank" rel="noopener">Google</a></span>
     </div>
+  </div>
+  <div class="wrap hero-banner">
+    <img src="images/hero.jpg" alt="Inside Casa Massina, the open-plan apartment above Lake Kerkini" loading="eager">
+    <div class="cap">The apartment — Ano Poroia, above the lake</div>
   </div>
   <div class="wrap">
     <div class="mosaic">
