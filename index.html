@@ -17,7 +17,7 @@
 {"@context":"https://schema.org","@type":"LodgingBusiness","name":"Casa Massina","description":"A modern design apartment in Ano Poroia, above Lake Kerkini, Serres. Private courtyard, open-plan, sleeps two.","telephone":"+306944677617","url":"https://yamasgreece.github.io/casa-massina/","address":{"@type":"PostalAddress","addressLocality":"Ano Poroia","addressRegion":"Serres","addressCountry":"GR"},"image":"https://yamasgreece.github.io/casa-massina/images/hero.jpg","petsAllowed":false,"numberOfRooms":1}
 </script>
 <style>
-  :root{--paper:#FBFAF7;--ink:#20201c;--soft:#8f8a7e;--line:#ece8df;--accent:#7d8169;--accent-d:#5f6350}
+  :root{--paper:#FBFAF7;--ink:#20201c;--soft:#8f8a7e;--line:#ece8df;--accent:#d87470;--accent-d:#c05c58}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{margin:0;background:var(--paper);color:var(--ink);font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:17px;line-height:1.72;-webkit-font-smoothing:antialiased}
@@ -37,7 +37,11 @@
   /* header */
   header.nav{position:sticky;top:0;z-index:30;background:rgba(251,250,247,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
   .nav-in{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .brand{font-family:'Fraunces',serif;font-weight:400;font-size:20px;letter-spacing:.02em}
+  .brand{display:flex;align-items:center}
+  .brand img{height:34px;width:auto;display:block}
+  .hero-logo{margin:4px 0 16px}
+  .hero-logo img{height:auto;width:min(360px,72vw);display:block}
+  .foot-logo{height:46px;width:auto;margin-bottom:12px}
   .nav-links{display:flex;gap:26px;align-items:center}
   .nav-links a{font-size:13px;text-decoration:none;color:#5b574e}
   .nav-links a:hover{color:var(--ink)}
@@ -129,9 +133,9 @@
 </head>
 <body>
 
-<header class="nav">
+<header class="nav" id="top">
   <div class="wrap nav-in">
-    <div class="brand">Casa Massina</div>
+    <a class="brand" href="#top" aria-label="Casa Massina"><img src="images/logo.png" alt="Casa Massina"></a>
     <nav class="nav-links">
       <a class="nl" href="#house">The house</a>
       <a class="nl" href="#art">The art</a>
@@ -146,7 +150,7 @@
 <section class="hero">
   <div class="wrap">
     <div class="eyebrow">Ano Poroia · Lake Kerkini · Serres</div>
-    <h1>Casa Massina</h1>
+    <h1 class="hero-logo"><img src="images/logo.png" alt="Casa Massina"></h1>
     <p class="tagline">A design hideaway by the village square, minutes from the pelicans of Lake Kerkini.</p>
     <div class="hero-cta">
       <a class="btn accent tel" href="tel:+306944677617">Call to book · +30 694 467 7617</a>
@@ -294,7 +298,7 @@
 <footer>
   <div class="wrap foot">
     <div>
-      <div class="brand">Casa Massina</div>
+      <img class="foot-logo" src="images/logo.png" alt="Casa Massina"><br>
       Ano Poroia, Lake Kerkini, Serres, Greece<br>
       <a class="tel" href="tel:+306944677617">+30 694 467 7617</a>
     </div>
