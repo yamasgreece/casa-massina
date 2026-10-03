@@ -3,171 +3,285 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Casa Massina — a design apartment above Lake Kerkini</title>
-<meta name="description" content="Casa Massina: one autonomous design apartment of 80 m² in Ano Poroia, above Lake Kerkini, Serres. Private courtyard, open-plan, sleeps two. Pelicans, water buffalo and Mount Belles at the door.">
+<title>Casa Massina — a design stay by Lake Kerkini, Ano Poroia</title>
+<meta name="description" content="Casa Massina: a modern design hideaway in Ano Poroia, a few steps from the village square and minutes from Lake Kerkini, one of Europe's great birdwatching lakes. Book direct by phone: +30 694 467 7617.">
 <link rel="canonical" href="https://yamasgreece.github.io/casa-massina/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Casa Massina — a design apartment above Lake Kerkini">
-<meta property="og:description" content="One autonomous design apartment in Ano Poroia, above Lake Kerkini, Serres. Private courtyard, open-plan, sleeps two.">
+<meta property="og:title" content="Casa Massina — a design stay by Lake Kerkini">
+<meta property="og:description" content="A modern hideaway in Ano Poroia, minutes from the pelicans of Lake Kerkini. Book direct by phone.">
 <meta property="og:image" content="images/hero.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LodgingBusiness","name":"Casa Massina","description":"A modern design apartment in Ano Poroia, above Lake Kerkini, Serres. Private courtyard, open-plan, sleeps two.","telephone":"+306944677617","url":"https://yamasgreece.github.io/casa-massina/","address":{"@type":"PostalAddress","addressLocality":"Ano Poroia","addressRegion":"Serres","addressCountry":"GR"},"image":"https://yamasgreece.github.io/casa-massina/images/hero.jpg","petsAllowed":false,"numberOfRooms":1}
+</script>
 <style>
-  :root{
-    --paper:#FAF8F4; --ink:#1b1a17; --soft:#8a8578; --line:#e7e3da; --accent:#7d8169; /* muted sage */
-  }
+  :root{--paper:#FAF8F4;--ink:#1b1a17;--soft:#8a8578;--line:#e7e3da;--accent:#7d8169;--accent-d:#616551}
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-weight:400;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
   img{display:block;max-width:100%}
   a{color:inherit}
-  .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 28px}
-  .serif{font-family:'Fraunces',Georgia,serif;font-weight:300;letter-spacing:-.01em}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:300;letter-spacing:-.015em;margin:0}
+  .wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 28px}
+  .kicker{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:20px}
+  .btn{display:inline-block;font-size:13px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;background:var(--ink);color:#fff;padding:15px 28px;border-radius:40px;transition:background .2s;font-weight:500}
+  .btn:hover{background:var(--accent)}
+  .btn.accent{background:var(--accent)}.btn.accent:hover{background:var(--accent-d)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid #c9c4b8}
+  .btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .tel{font-variant-numeric:tabular-nums}
 
-  /* nav */
-  header.nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:20px 28px;mix-blend-mode:difference;color:#fff}
-  .brand{font-family:'Fraunces',serif;font-weight:400;font-size:19px;letter-spacing:.02em}
-  .nav a.book{font-size:12px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;border:1px solid #fff;padding:9px 16px;border-radius:40px}
+  /* header */
+  header.nav{position:sticky;top:0;z-index:30;background:rgba(250,248,244,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .brand{font-family:'Fraunces',serif;font-weight:400;font-size:20px;letter-spacing:.02em}
+  .nav-links{display:flex;gap:28px;align-items:center}
+  .nav-links a{font-size:13px;letter-spacing:.04em;text-decoration:none;color:#55514a}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-call{font-size:13px!important;letter-spacing:.1em;font-weight:600;color:var(--accent-d)!important;border:1px solid var(--accent);border-radius:40px;padding:8px 16px}
+  @media(max-width:860px){.nav-links a.nl{display:none}}
 
   /* hero */
-  .hero{position:relative;height:100svh;min-height:560px;overflow:hidden;background:#111}
-  .hero img{width:100%;height:100%;object-fit:cover;opacity:.92}
-  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.32),rgba(0,0,0,.05) 40%,rgba(0,0,0,.45))}
-  .hero-cap{position:absolute;left:0;right:0;bottom:0;z-index:3;color:#fff;padding:0 0 7vh}
-  .hero-cap .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;opacity:.9}
-  .hero-cap h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(44px,9vw,104px);line-height:.98;margin:14px 0 10px;letter-spacing:-.02em}
-  .hero-cap .sub{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:clamp(18px,2.4vw,26px);opacity:.95;max-width:22ch}
+  .hero{position:relative;height:92svh;min-height:580px;overflow:hidden;background:#111}
+  .hero>img{width:100%;height:100%;object-fit:cover;opacity:.9}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.28),rgba(0,0,0,.02) 38%,rgba(0,0,0,.6))}
+  .hero-cap{position:absolute;left:0;right:0;bottom:0;z-index:3;color:#fff;padding:0 0 8vh}
+  .hero-cap .eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;opacity:.92}
+  .hero-cap h1{font-size:clamp(46px,9vw,110px);line-height:.95;margin:14px 0 14px}
+  .hero-cap .sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(18px,2.4vw,27px);opacity:.96;max-width:26ch;margin-bottom:26px}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .hero-cta .btn{background:#fff;color:var(--ink)}.hero-cta .btn:hover{background:var(--accent);color:#fff}
+  .hero-small{font-size:13px;opacity:.85;color:#fff;align-self:center}
+  .hero-small a{color:#fff;text-decoration:underline;text-underline-offset:3px}
 
-  /* sections */
-  section{padding:clamp(64px,11vw,140px) 0}
-  .lead{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(26px,4vw,44px);line-height:1.22;letter-spacing:-.01em;max-width:20ch}
-  .lead .accent{color:var(--accent);font-style:italic}
-  .cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
-  .cols p{margin:0 0 18px;color:#36332c}
-  .kicker{font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
+  section{padding:clamp(60px,10vw,128px) 0}
+  .lead{font-size:clamp(26px,4vw,46px);line-height:1.2;max-width:22ch}
+  .lead .ac{color:var(--accent);font-style:italic}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:clamp(26px,5vw,76px);align-items:start}
+  .two p{margin:0 0 16px;color:#38342d}
+  p.big{font-size:19px}
+
+  /* amenities */
+  .amen{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:36px}
+  .amen div{background:var(--paper);padding:26px 22px}
+  .amen .n{font-family:'Fraunces',serif;font-size:30px;line-height:1}
+  .amen .l{font-size:13px;color:var(--soft);margin-top:8px;letter-spacing:.02em}
+  @media(max-width:760px){.amen{grid-template-columns:1fr 1fr}}
+
+  /* feature */
+  .feature{position:relative;overflow:hidden}
+  .feature img{width:100%;height:clamp(340px,56vw,620px);object-fit:cover}
+  .feature .credit{position:absolute;right:12px;bottom:10px;font-size:10px;color:rgba(255,255,255,.72);letter-spacing:.03em}
+  .feat-body{background:#14201c;color:#eef0e9}
+  .feat-body .kicker{color:#aeb79e}
+  .feat-body h2{color:#fff;font-size:clamp(28px,4.4vw,50px);max-width:16ch}
+  .feat-body p{color:#cfd3c6;max-width:44ch;margin:18px 0 0}
+
+  /* guide cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .card{border:1px solid var(--line);border-radius:14px;padding:28px;background:#fff;transition:transform .3s,box-shadow .3s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(27,26,23,.07)}
+  .card h3{font-size:22px;margin-bottom:10px}
+  .card p{margin:0;color:#4a463e;font-size:15.5px;line-height:1.6}
+  .card .tag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:14px}
+  @media(max-width:860px){.cards{grid-template-columns:1fr}.two{grid-template-columns:1fr;gap:6px}}
 
   /* gallery */
-  .gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
-  .gallery figure{margin:0;overflow:hidden;background:var(--line)}
-  .gallery img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
-  .gallery figure:hover img{transform:scale(1.04)}
-  .g-tall{grid-column:span 2;grid-row:span 2;aspect-ratio:3/4}
-  .g-wide{grid-column:span 4;aspect-ratio:4/3}
-  .g-sq{grid-column:span 2;aspect-ratio:3/4}
+  .gal{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:8px}
+  .gal figure{margin:0;overflow:hidden;background:var(--line)}
+  .gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .gal figure:hover img{transform:scale(1.05)}
+  .t2{grid-column:span 2;grid-row:span 2;aspect-ratio:3/4}
+  .w4{grid-column:span 4;aspect-ratio:16/9}
+  .s2{grid-column:span 2;aspect-ratio:3/4}
+  @media(max-width:760px){.gal{grid-template-columns:1fr 1fr}.t2,.w4,.s2{grid-column:span 1;grid-row:auto;aspect-ratio:3/4}}
 
-  /* facts */
-  .facts{border-top:1px solid var(--line);margin-top:10px}
-  .facts .row{display:grid;grid-template-columns:200px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
-  .facts .k{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--soft);padding-top:3px}
-  .facts .v{font-size:18px;color:#2a2823;max-width:52ch}
+  /* book */
+  .book{background:var(--ink);color:var(--paper);text-align:center}
+  .book h2{color:#fff;font-size:clamp(32px,5vw,58px)}
+  .book p.sub{color:#c7c2b7;margin:14px auto 30px;max-width:46ch}
+  .book .phone{font-family:'Fraunces',serif;font-size:clamp(26px,4vw,40px);color:#fff;text-decoration:none;display:inline-block;margin-bottom:8px}
+  .book .btn{background:#fff;color:var(--ink)}.book .btn:hover{background:var(--accent);color:#fff}
+  .book .alt{margin-top:26px;font-size:14px;color:#b7b2a7}
+  .book .alt a{color:#fff;text-decoration:underline;text-underline-offset:3px;margin:0 6px}
 
-  /* quote band */
-  .band{background:var(--ink);color:var(--paper)}
-  .band .q{font-family:'Fraunces',serif;font-weight:300;font-style:italic;font-size:clamp(24px,3.6vw,40px);line-height:1.3;max-width:24ch;margin:0 auto;text-align:center}
+  /* faq */
+  details{border-bottom:1px solid var(--line);padding:20px 0}
+  details summary{cursor:pointer;list-style:none;font-size:18px;font-family:'Fraunces',serif;display:flex;justify-content:space-between;gap:16px}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+";color:var(--accent);font-size:22px;line-height:1}
+  details[open] summary::after{content:"\2212"}
+  details p{color:#4a463e;margin:14px 0 0;max-width:62ch}
 
-  /* book cta */
-  .book-cta{text-align:center}
-  .book-cta h2{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,5vw,56px);margin:0 0 10px;letter-spacing:-.01em}
-  .book-cta p{color:var(--soft);margin:0 0 30px}
-  .btn{display:inline-block;font-size:13px;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;background:var(--ink);color:#fff;padding:16px 34px;border-radius:40px;transition:background .2s}
-  .btn:hover{background:var(--accent)}
-  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);margin-left:10px}
-  .btn.ghost:hover{background:var(--ink);color:#fff}
+  footer{background:#14201c;color:#cfd3c6;padding:54px 0;font-size:14px}
+  .foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px}
+  .foot a{color:#fff;text-decoration:none}
+  .foot .brand{color:#fff;font-size:22px;margin-bottom:10px}
+  .foot .muted{color:#8f978a;font-size:12px;margin-top:18px;line-height:1.6}
 
-  footer{border-top:1px solid var(--line);padding:46px 0;color:var(--soft);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
-  footer .serif{font-size:18px;color:var(--ink)}
-
-  @media(max-width:820px){
-    .cols{grid-template-columns:1fr;gap:10px}
-    .gallery{grid-template-columns:1fr 1fr;gap:10px}
-    .g-tall,.g-wide,.g-sq{grid-column:span 1;grid-row:auto;aspect-ratio:3/4}
-    .g-wide{aspect-ratio:4/3}
-    .facts .row{grid-template-columns:1fr;gap:4px;padding:18px 0}
-  }
+  /* sticky mobile call */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;background:var(--accent);color:#fff;text-align:center;padding:14px;font-weight:600;letter-spacing:.08em;text-decoration:none;font-size:15px}
+  @media(max-width:860px){.callbar{display:block}body{padding-bottom:52px}}
 </style>
 </head>
 <body>
 
-<header class="nav wrap" style="max-width:none">
-  <div class="brand">Casa Massina</div>
-  <a class="book" href="https://www.booking.com/hotel/gr/casa-massina.html" target="_blank" rel="noopener">Book</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <div class="brand">Casa Massina</div>
+    <nav class="nav-links">
+      <a class="nl" href="#house">The house</a>
+      <a class="nl" href="#kerkini">Lake Kerkini</a>
+      <a class="nl" href="#area">The area</a>
+      <a class="nl" href="#gallery">Gallery</a>
+      <a class="nav-call tel" href="tel:+306944677617">Call to book</a>
+    </nav>
+  </div>
 </header>
 
-<section class="hero" style="padding:0">
-  <img src="images/hero.jpg" alt="Casa Massina, the apartment in the light">
+<section class="hero">
+  <img src="images/hero.jpg" alt="Casa Massina, the light-filled apartment">
   <div class="hero-cap"><div class="wrap">
     <div class="eyebrow">Ano Poroia · Lake Kerkini · Serres</div>
     <h1>Casa Massina</h1>
-    <div class="sub">A design apartment above the lake.</div>
+    <div class="sub">A design hideaway by the village square, minutes from the pelicans of Lake Kerkini.</div>
+    <div class="hero-cta">
+      <a class="btn tel" href="tel:+306944677617">Call to book · +30 694 467 7617</a>
+      <span class="hero-small">or find us on <a href="https://www.google.com/maps/search/?api=1&query=Casa%20Massina%20Ano%20Poroia" target="_blank" rel="noopener">Google</a></span>
+    </div>
   </div></div>
 </section>
 
 <section>
   <div class="wrap">
-    <p class="lead">Not a hotel. One apartment, <span class="accent">lent to you</span> like a private home.</p>
+    <p class="lead">Not a hotel. One home, <span class="ac">lent to you</span> above the lake.</p>
   </div>
 </section>
 
-<section style="padding-top:0">
-  <div class="wrap cols">
+<section id="house" style="padding-top:0">
+  <div class="wrap two">
     <div>
-      <div class="kicker">The place</div>
-      <p>Casa Massina is one autonomous apartment of eighty square metres, beside the village square of Ano Poroia, with its own entrance and a private courtyard.</p>
-      <p>Inside, it is a single open volume: white walls, a reed ceiling, a daybed in the light, a proper kitchen under a run of wooden stools, and real artworks rather than the usual framed nothing. Underfloor heat keeps the warmth even and the look clean.</p>
+      <div class="kicker">The house</div>
+      <p class="big">For more than thirty years this was the village carpenter's shop. Today it is one autonomous apartment of eighty square metres, a few steps from the square of Ano Poroia, with its own entrance and a private courtyard.</p>
+      <p>Inside, it is a single open volume: white walls, a reed ceiling, a daybed in the light, a proper kitchen under a run of wooden stools, and real artworks on the walls. Underfloor heating keeps the warmth even and the look clean. It sleeps two in earnest comfort and reads as a private home that someone with a careful eye happens to lend you.</p>
     </div>
     <div>
-      <div class="kicker">The idea</div>
-      <p>Kerkini was always a day trip, somewhere you came for a morning with binoculars and left before dark, because there was nowhere worth unpacking a bag.</p>
-      <p>Casa Massina is the room that changes that. A genuinely well-made space in a place that did not have one: no spa, no concept, no wall of branding. It sleeps two in earnest comfort and reads as a home someone with a careful eye happens to lend you.</p>
+      <div class="kicker">Why here</div>
+      <p class="big">Kerkini was always a day trip, somewhere you came for a morning with binoculars and left before dark, because there was nowhere worth unpacking a bag.</p>
+      <p>Casa Massina is the room that changes that: a genuinely well-made space in a place that did not have one. No spa, no concept, no wall of branding. Come for the morning on the water and stay for the quiet that follows.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="amen">
+      <div><div class="n">80m²</div><div class="l">One open-plan apartment</div></div>
+      <div><div class="n">2</div><div class="l">Guests, in real comfort</div></div>
+      <div><div class="n">Courtyard</div><div class="l">Private entrance & garden</div></div>
+      <div><div class="n">Kitchen</div><div class="l">Fully equipped</div></div>
+      <div><div class="n">Warmth</div><div class="l">Underfloor heating</div></div>
+      <div><div class="n">Wi-Fi</div><div class="l">Free, fast</div></div>
+      <div><div class="n">Parking</div><div class="l">Free, by the house</div></div>
+      <div><div class="n">The square</div><div class="l">Tavernas a minute away</div></div>
     </div>
   </div>
 </section>
 
-<section style="padding-top:0">
-  <div class="wrap">
-    <div class="gallery">
-      <figure class="g-tall"><img src="images/g2.jpg" alt="Interior, the open-plan space" loading="lazy"></figure>
-      <figure class="g-wide"><img src="images/g1.jpg" alt="The apartment in daylight" loading="lazy"></figure>
-      <figure class="g-sq"><img src="images/g4.jpg" alt="A corner of the apartment" loading="lazy"></figure>
-      <figure class="g-sq"><img src="images/g5.jpg" alt="The kitchen and stools" loading="lazy"></figure>
-      <figure class="g-wide"><img src="images/g3.jpg" alt="Light and white walls" loading="lazy"></figure>
-      <figure class="g-sq"><img src="images/g6.jpg" alt="The private courtyard" loading="lazy"></figure>
+<section class="feature" style="padding:0" id="kerkini">
+  <img src="images/kerkini-pelicans.jpg" alt="Flocks of pelicans on Lake Kerkini, below Ano Poroia">
+  <span class="credit">Lake Kerkini. Photo: Vassilios Vescoukis, Wikimedia Commons (CC BY-SA 4.0)</span>
+</section>
+<section class="feat-body">
+  <div class="wrap two" style="align-items:center">
+    <div>
+      <div class="kicker">Lake Kerkini</div>
+      <h2>Ten minutes from one of Europe's great bird lakes.</h2>
+    </div>
+    <div>
+      <p>Downhill from the village lies Lake Kerkini, a Ramsar wetland and Natura 2000 park where Dalmatian and white pelicans glide in by the hundred, herds of water buffalo stand in the shallows, and more than three hundred bird species pass through the year.</p>
+      <p>Go out at first light in a flat-bottomed boat, drift among the pelicans and the drowned willows, and come back for breakfast. The birds are sharpest in the cold months, from autumn through early spring. This is why people come, and why it is worth staying the night.</p>
     </div>
   </div>
 </section>
 
-<section class="band">
+<section id="area">
   <div class="wrap">
-    <p class="q">Come for the morning on the water, not for a minibar.</p>
+    <div class="kicker">The area</div>
+    <h2 style="font-size:clamp(28px,4.4vw,48px);max-width:18ch">A few good reasons to make it more than a day.</h2>
+    <div class="cards">
+      <div class="card"><span class="tag">On the water</span><h3>A dawn boat with the pelicans</h3><p>Local boatmen take small groups out onto Kerkini at sunrise, in among the birds and the half-submerged trees. The classic Kerkini morning, and the one you will remember.</p></div>
+      <div class="card"><span class="tag">For birders</span><h3>Three hundred species</h3><p>Pelicans, herons, cormorants, egrets and raptors, plus the water buffalo on the banks. Bring binoculars; the information centre and hides help you read the lake.</p></div>
+      <div class="card"><span class="tag">On foot</span><h3>Mount Belles & the springs</h3><p>Above the village rise the plane-shaded springs and the trails of Mount Belles, on the border ridge. Cool walking and big views, a short drive up from the door.</p></div>
+      <div class="card"><span class="tag">At the table</span><h3>Buffalo, lake fish & pies</h3><p>The village tavernas cook what the place gives: Kerkini water-buffalo meat, freshwater fish, and proper Macedonian pies. A full kitchen waits back at the apartment too.</p></div>
+      <div class="card"><span class="tag">Nearby</span><h3>Springs, baths & ruins</h3><p>Day trips reach the thermal baths of Sidirokastro, the town of Serres, and the ancient sites of the Strymon valley. Quiet roads, few crowds.</p></div>
+      <div class="card"><span class="tag">Any season</span><h3>Winter light, summer calm</h3><p>Cold, clear winter mornings for the birds; green and unhurried in summer. There is no wrong month, only a different lake each time.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" style="padding-top:0">
+  <div class="wrap">
+    <div class="gal">
+      <figure class="t2"><img src="images/g2.jpg" alt="The open-plan interior" loading="lazy"></figure>
+      <figure class="w4"><img src="images/g1.jpg" alt="The apartment in daylight" loading="lazy"></figure>
+      <figure class="s2"><img src="images/g4.jpg" alt="A corner of the apartment" loading="lazy"></figure>
+      <figure class="s2"><img src="images/g5.jpg" alt="The kitchen and wooden stools" loading="lazy"></figure>
+      <figure class="w4"><img src="images/g3.jpg" alt="Light and white walls" loading="lazy"></figure>
+      <figure class="s2"><img src="images/g6.jpg" alt="The private courtyard" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="book" id="book">
+  <div class="wrap">
+    <div class="kicker" style="color:#aeb79e">Book direct</div>
+    <h2>Call us. We answer in person.</h2>
+    <p class="sub">The best rate is the one you book with us directly, with no platform in between. Tell us your dates and we will hold the house for you.</p>
+    <a class="phone tel" href="tel:+306944677617">+30 694 467 7617</a><br>
+    <a class="btn tel" href="tel:+306944677617">Call to book</a>
+    <div class="alt">Prefer an app? We are also on
+      <a href="https://www.airbnb.com/rooms/1116112296717306287" target="_blank" rel="noopener">Airbnb</a> ·
+      <a href="https://www.booking.com/hotel/gr/casa-massina.html" target="_blank" rel="noopener">Booking.com</a>
+    </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap">
-    <div class="kicker">The particulars</div>
-    <div class="facts">
-      <div class="row"><div class="k">Where</div><div class="v">Ano Poroia, above Lake Kerkini, Serres, northern Greece — beside the village square.</div></div>
-      <div class="row"><div class="k">The space</div><div class="v">One autonomous apartment of 80 m²: single open plan, private entrance and courtyard, underfloor heat. Sleeps two.</div></div>
-      <div class="row"><div class="k">The table</div><div class="v">A full kitchen in the apartment, and the village tavernas below: Kerkini water buffalo, lake fish and Macedonian pies.</div></div>
-      <div class="row"><div class="k">Around you</div><div class="v">Lake Kerkini with its Dalmatian pelicans and water buffalo, Mount Belles, walking and birdwatching.</div></div>
-      <div class="row"><div class="k">Good to know</div><div class="v">A single apartment, so it books as one party at a time. A far, quiet corner of the country. Sharpest in the cold months, when the birds are in.</div></div>
+  <div class="wrap two" style="align-items:start">
+    <div>
+      <div class="kicker">Find us</div>
+      <h2 style="font-size:clamp(26px,3.6vw,40px)">Ano Poroia, above Lake Kerkini, Serres.</h2>
+      <p style="color:#38342d;margin-top:18px">Beside the village square, in the north of Greece near the Belles ridge. About an hour from Serres and the Thessaloniki road, and ten minutes down to the lake.</p>
+      <p style="margin-top:20px"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Casa%20Massina%20Ano%20Poroia" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </div>
+    <div>
+      <div class="kicker">Good to know</div>
+      <details><summary>How do I book?</summary><p>The simplest way is to call us on +30 694 467 7617. We answer personally, confirm your dates on the spot, and give you our best direct rate. You can also book through Airbnb or Booking.com.</p></details>
+      <details><summary>How many does it sleep?</summary><p>Two guests, in genuine comfort. It is a single autonomous apartment, booked by one party at a time, so you always have the whole place to yourselves.</p></details>
+      <details><summary>When is the best time to come?</summary><p>For the birds, autumn to early spring, when the pelicans are in and the light is clear. Summer is green, quiet and unhurried. Each season gives a different lake.</p></details>
+      <details><summary>Is there parking?</summary><p>Yes, free parking by the house, and the village square with its tavernas is a minute's walk away.</p></details>
     </div>
   </div>
 </section>
 
-<section class="book-cta">
-  <div class="wrap">
-    <h2 class="serif">Stay the night.</h2>
-    <p>Available for one party at a time. Book the dates that are open.</p>
-    <a class="btn" href="https://www.booking.com/hotel/gr/casa-massina.html" target="_blank" rel="noopener">Book on Booking.com</a>
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="brand">Casa Massina</div>
+      Ano Poroia, Lake Kerkini, Serres, Greece<br>
+      <a class="tel" href="tel:+306944677617">+30 694 467 7617</a>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/casa.massina/" target="_blank" rel="noopener">Instagram</a> ·
+      <a href="https://www.airbnb.com/rooms/1116112296717306287" target="_blank" rel="noopener">Airbnb</a> ·
+      <a href="https://www.booking.com/hotel/gr/casa-massina.html" target="_blank" rel="noopener">Booking.com</a> ·
+      <a href="https://www.google.com/maps/search/?api=1&query=Casa%20Massina%20Ano%20Poroia" target="_blank" rel="noopener">Google Maps</a>
+      <div class="muted">Photos of the house: Casa Massina. Lake Kerkini: Vassilios Vescoukis, Wikimedia Commons (CC BY-SA 4.0).</div>
+    </div>
   </div>
-</section>
-
-<footer class="wrap">
-  <div><span class="serif">Casa Massina</span> · Ano Poroia, Lake Kerkini, Serres</div>
-  <div>Photos: Casa Massina</div>
 </footer>
+
+<a class="callbar tel" href="tel:+306944677617">Call to book · +30 694 467 7617</a>
 
 </body>
 </html>
